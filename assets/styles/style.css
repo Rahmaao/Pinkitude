@@ -1147,3 +1147,190 @@ body {
     margin: 10px 30%;
   }
 }
+
+/* SECTION All Events */
+
+.pinkitude-all-events-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+
+.pinkitude-all-events-page__events-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pinkitude-all-events-page__event {
+  height: fit-content;
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background: white;
+  margin-bottom: 50px;
+  box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+  -webkit-box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+  -moz-box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+}
+
+.pinkitude-all-events-page__event-img {
+  width: 30%;
+  /* height: 100%; */
+  background: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.pinkitude-all-events-page__event-img__trans {
+  height: 100%;
+  width: 100%;
+  background: rgba(156, 55, 55, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.pinkitude-all-events-page__event-text {
+  width: 100%;
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.pinkitude-all-events-page__event-text p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.pinkitude-all-events-page__event-text h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pinkitude-all-events-page__event-text__details {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-right: 10px;
+  align-items: center;
+}
+.pinkitude-all-events-page__event-text__details p {
+  margin-bottom: 0;
+}
+
+.pinkitude-all-events-page__event-text__details__detail {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  width: fit-content;
+}
+
+.pinkitude-all-events-page__event-text__details__detail:not(:last-child) {
+  margin-right: 10px;
+}
+.pinkitude-all-events-page__event-text__details__detail-icon {
+  color: var(--primary);
+  height: 100%;
+  margin-right: 5px;
+}
+.pinkitude-all-events-page__event-text__details__detail svg {
+  height: 100%;
+  stroke: var(--background);
+}
+
+.pinkitude-all-events-page__event-text__details__detail p {
+  color: grey;
+}
+
+@media screen and (max-width: 1250px) {
+  .pinkitude-all-events-page__event-img h3 {
+    font-size: 70px;
+  }
+  .pinkitude-all-events-page__event-img P {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .pinkitude-all-events-page {
+    padding: 100px 50px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .pinkitude-all-events-page__event {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    justify-content: space-between;
+  }
+
+  .pinkitude-all-events-page__event-img {
+    width: 100%;
+    height: 200px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .pinkitude-all-events-page__event-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .pinkitude-all-events-page__event-text p:nth-child(2) {
+    text-align: center;
+  }
+
+  .pinkitude-all-events-page__event-text h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .pinkitude-all-events-page__event-text__details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .pinkitude-all-events-page__event-text__details__detail {
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+    width: fit-content;
+    margin: 10px 30%;
+  }
+}
+
+/* !SECTION All events */
