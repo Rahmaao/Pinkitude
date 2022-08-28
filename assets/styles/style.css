@@ -72,7 +72,7 @@ body {
 
 .pinkitude-section-header {
   height: 80px;
-  min-width: 300px;
+  width: fit-content;
   padding: 0 30px;
   line-height: 80px;
   background: white;
@@ -130,7 +130,7 @@ body {
   left: -180px;
   height: 40px;
   width: 40px;
-  color: var(--primary);
+  color: black;
   display: none;
 }
 
@@ -142,6 +142,47 @@ body {
   width: 25%;
 }
 
+.pinkitude-navbar__link {
+  position: relative;
+  cursor: pointer;
+  padding: 1px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pinkitude-navbar__link:hover .pinkitude-navbar__link__drop,
+.pinkitude-navbar__link:focus .pinkitude-navbar__link__drop {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pinkitude-navbar__link__drop {
+  position: absolute;
+  top: 4rem;
+  left: -2rem;
+  background: white;
+  box-shadow: 0 0 10px var(--background);
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 12px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
+}
+
+.pinkitude-navbar__link__drop li {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.pinkitude-navbar__link__drop a:hover {
+  color: var(--primary);
+}
+
 .pinkitude-navbar__link a {
   text-decoration: none;
   color: black;
@@ -149,7 +190,7 @@ body {
   font-weight: bold;
 }
 
-.pinkitude-navbar__link:hover a {
+.pinkitude-navbar__link:hover > a {
   color: var(--primary);
 }
 
@@ -199,6 +240,11 @@ body {
   display: flex;
   flex-direction: column;
   margin: 20px 0 40px 0;
+  list-style-type: none;
+}
+
+.pinkitude-navbar__sidebar__links-container li {
+  margin-bottom: 10px;
 }
 
 .pinkitude-navbar__sidebar__link {
@@ -206,6 +252,34 @@ body {
   color: var(--background);
   font-size: 25px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.show-dropmenu > .pinkitude-navbar__sidebar__link__dropmenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pinkitude-navbar__sidebar__link__dropmenu {
+  width: fit-content;
+  list-style-type: none;
+  position: relative;
+  top: 0.8rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 200ms ease-in-out;
+}
+
+.pinkitude-navbar__sidebar__link__dropmenu__link {
+}
+.pinkitude-navbar__sidebar__link__dropmenu__link a {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 16px;
 }
 
 .pinkitude-navbar__sidebar__buttons-container {
@@ -217,7 +291,7 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .pinkitude-navbar {
     padding: 20px 50px;
   }
@@ -513,6 +587,7 @@ body {
 /* SECTION STORIES */
 .pinkitude-stories {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -525,6 +600,7 @@ body {
   display: flex;
   padding: 0 200px;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .pinkitude-stories__text-container {
@@ -546,7 +622,7 @@ body {
 .pinkitude-stories__text p {
   margin-bottom: 30px;
 }
-.pinkitude-stories .pinkitude-button {
+.pinkitude-stories__container .pinkitude-button {
   position: relative;
   bottom: -50px;
 }
@@ -606,6 +682,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 200px;
 }
 
 .pinkitude-upcoming__event {
@@ -662,7 +739,7 @@ body {
   width: 100%;
   height: 300px;
   background: white;
-  margin-top: 200px;
+
   display: flex;
   align-items: center;
   padding: 80px 50px;
@@ -714,7 +791,7 @@ body {
   padding: 20px 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .pinkitude-footer {
     padding: 80px 30px;
   }
@@ -728,7 +805,7 @@ body {
   }
 }
 
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 1010px) {
   .pinkitude-footer {
     flex-direction: column;
     padding: 40px 0px;
@@ -756,14 +833,19 @@ body {
   .pinkitude-footer__links-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .pinkitude-footer__links-container__group {
-    margin: 0px;
+    margin: 0;
+    margin-top: 20px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .pinkitude-footer__links-container__group:not(:last-child) {
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .pinkitude-footer__links-container__group__header {
@@ -787,3 +869,281 @@ body {
   }
 }
 /* !SECTION FOOTER */
+
+/* SECTION DONATE */
+
+.pinkitude-donate {
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.pinkitude-donate__account-details {
+  width: 100%;
+
+  text-align: center;
+}
+
+.pinkitude-donate__account-details h2 {
+  font-size: 40px;
+}
+.pinkitude-donate__account-details h5 {
+  font-weight: 400;
+  margin: 5px 0 20px 0;
+}
+
+/* !SECTION DONATE */
+
+/* SECTION STORIES */
+
+.pinkitude-stories-page {
+  width: 100%;
+  height: auto;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.pinkitude-stories-page__stories-container {
+  width: 100%;
+  height: auto;
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pinkitude-stories-page__story {
+  height: auto;
+  /* width: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: white;
+  padding: 50px;
+  background: var(--primary);
+}
+
+.pinkitude-stories-page__story-text p {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1250px) {
+  .pinkitude-stories-page__stories-container {
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pinkitude-stories-page__stories-container {
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .pinkitude-stories-page__stories-container {
+    padding: 0 30px;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+@media screen and (max-width: 667px) {
+  .pinkitude-stories-page__stories-container {
+    padding: 0 30px;
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+/* TODO Make it responsive */
+
+/* !SECTION STORIES */
+
+.pinkitude-upcoming-events-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+
+.pinkitude-upcoming-events-page__events-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pinkitude-upcoming-events-page__event {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin-bottom: 50px;
+  box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+  -webkit-box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+  -moz-box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+}
+
+.pinkitude-upcoming-events-page__event-img {
+  width: 30%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.pinkitude-upcoming-events-page__event-img__trans {
+  height: 100%;
+  width: 100%;
+  background: rgba(156, 55, 55, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.pinkitude-upcoming-events-page__event-img h3 {
+  font-size: 90px;
+}
+.pinkitude-upcoming-events-page__event-img P {
+  font-size: 18px;
+}
+.pinkitude-upcoming-events-page__event-text {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pinkitude-upcoming-events-page__event-text h5 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: normal;
+}
+.pinkitude-upcoming-events-page__event-text__details {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.pinkitude-upcoming-events-page__event-text__details__detail {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  width: fit-content;
+}
+
+.pinkitude-upcoming-events-page__event-text__details__detail:not(:last-child) {
+  margin-right: 10px;
+}
+.pinkitude-upcoming-events-page__event-text__details__detail-icon {
+  color: var(--primary);
+  height: 100%;
+  margin-right: 5px;
+}
+.pinkitude-upcoming-events-page__event-text__details__detail svg {
+  height: 100%;
+  stroke: var(--background);
+}
+
+.pinkitude-upcoming-events-page__event-text__details__detail p {
+  color: grey;
+}
+
+@media screen and (max-width: 1250px) {
+  .pinkitude-upcoming-events-page__event {
+    height: 150px;
+  }
+
+  .pinkitude-upcoming-events-page__event-img h3 {
+    font-size: 70px;
+  }
+  .pinkitude-upcoming-events-page__event-img P {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .pinkitude-upcoming-events-page {
+    padding: 100px 50px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .pinkitude-upcoming-events-page__event {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    justify-content: space-between;
+    background: white;
+    margin-bottom: 50px;
+    box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+    -webkit-box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+    -moz-box-shadow: 4px 12px 66px 4px rgba(209, 205, 205, 0.75);
+  }
+
+  .pinkitude-upcoming-events-page__event-img {
+    width: 100%;
+    height: 200px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .pinkitude-upcoming-events-page__event-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pinkitude-upcoming-events-page__event-text h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .pinkitude-upcoming-events-page__event-text__details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .pinkitude-upcoming-events-page__event-text__details__detail {
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+    width: fit-content;
+    margin: 10px 30%;
+  }
+}

@@ -29,13 +29,19 @@
 
         <ul class="pinkitude-navbar__links-container">
           <li class="pinkitude-navbar__link">
-            <a href="http://">Home</a>
+            <a href="/index.html">Home</a>
           </li>
           <li class="pinkitude-navbar__link">
             <a href="http://">About Us</a>
           </li>
           <li class="pinkitude-navbar__link">
             <a href="http://">Works</a>
+            <ul class="pinkitude-navbar__link__drop">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Gallery</a></li>
+              
+            </ul>
           </li>
         </ul>
 
@@ -44,10 +50,15 @@
         </div>
 
         <div class="pinkitude-navbar__buttons-container">
-          <button class="pinkitude-button">Donate</button>
-          <button class="pinkitude-button pinkitude-button_inverse">
-            Volunteer
-          </button>
+          <a href="/donate.html">
+            <button class="pinkitude-button">Donate</button>
+          </a>
+
+          <a href="">
+            <button class="pinkitude-button pinkitude-button_inverse">
+              Volunteer
+            </button></a
+          >
         </div>
 
         <div class="pinkitude-navbar__sidebar" id="jsSidebar">
@@ -71,27 +82,52 @@
             </svg>
           </div>
 
-          <div class="pinkitude-navbar__sidebar__links-container">
-            <a href="http://" class="pinkitude-navbar__sidebar__link">Home</a>
-            <a href="http://" class="pinkitude-navbar__sidebar__link"
-              >About Us</a
-            >
-            <a href="http://" class="pinkitude-navbar__sidebar__link">Work</a>
-          </div>
+          <ul class="pinkitude-navbar__sidebar__links-container">
+           <li><a href="/index.html" class="pinkitude-navbar__sidebar__link"
+              >Home</a></li> 
+            
+            <li><a href="http://" class="pinkitude-navbar__sidebar__link"
+              >About Us</a></li>
+            
+            <li id="dropable-sidebar-link"  class="pinkitude-navbar__sidebar__link ">Work
+              <ul class="pinkitude-navbar__sidebar__link__dropmenu">
+                <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
+                  <a href="fire">Stories</a>
+                </li>
+                <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
+                  <a href="google">Stories</a>
+                </li>
+              </ul>
+            
+            </li> 
+          </ul>
 
           <div class="pinkitude-navbar__sidebar__buttons-container">
-            <button class="pinkitude-button pinkitude-button_alt">
-              Donate
-            </button>
-            <button class="pinkitude-button pinkitude-button_inverse">
-              Donate
-            </button>
+            <a href="/donate.html">
+              <button class="pinkitude-button pinkitude-button_alt">
+                Donate
+              </button>
+            </a>
+
+            <a href="/donate.html">
+              <button class="pinkitude-button pinkitude-button_inverse">
+                Volunteer
+              </button>
+            </a>
           </div>
         </div>
       </nav>
 
-      <section class="pinkitude-donate"></section>
-
+      <section class="pinkitude-donate">
+        <div class="pinkitude-section-header">
+          <h2>Donate</h2>
+        </div>
+        <div class="pinkitude-donate__account-details">
+          <h2>01234556</h2>
+          <h5>Zenith Bank</h5>
+          <h4>Pinkitude Place</h4>
+        </div>
+      </section>
       <footer class="pinkitude-footer">
         <div class="pinkitude-footer__logo">
           <img src="./assets/img/logo.png" alt="logo" />
@@ -123,10 +159,14 @@
           </div>
         </div>
         <div class="pinkitude-footer__buttons-container">
-          <button class="pinkitude-button">Donate</button>
+          <a href="/donate.html">
+            <button class="pinkitude-button">Donate</button>
+          </a>
+          <a href="/donate.html">
           <button class="pinkitude-button pinkitude-button_inverse">
-            Donate
+            Volunteer
           </button>
+          <a href="/donate.html">
         </div>
       </footer>
     </div>
