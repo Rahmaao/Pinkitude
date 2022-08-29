@@ -193,8 +193,7 @@ body {
 .pinkitude-navbar__links-container {
   display: flex;
   list-style-type: none;
-  gap: 40px;
-  /* justify-content: space-between; */
+  gap: 50px;
   height: 40px;
   align-items: center;
   margin-bottom: 0;
