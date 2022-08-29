@@ -174,6 +174,7 @@ body {
   padding: 20px 90px;
   background: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -383,7 +384,7 @@ body {
   }
 }
 
-@media screen and (max-width: 946px) {
+@media screen and (max-width: 984px) {
   .pinkitude-navbar {
     justify-content: center;
     align-items: center;
@@ -438,7 +439,7 @@ body {
   height: 100%;
   width: 100%;
   background: rgba(0, 9, 9, 0.4);
-  padding: 200px 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -467,19 +468,18 @@ body {
   justify-content: center;
   gap: 15px;
   position: relative;
-  top: 50px;
+  top: 150px;
 }
 
 .pinkitude-hero-card {
   background: var(--background);
-  width: 240px;
+  width: 200px;
   border-radius: 20px;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--primary);
-  /* justify-content: center; */
 }
 
 .pinkitude-hero-card h4 {
