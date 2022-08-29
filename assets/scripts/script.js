@@ -1,11 +1,12 @@
 const sidebar = document.querySelector("#jsSidebar");
 const burger = document.querySelector("#jsBurgerButton")
 const close = document.querySelector("#jsCloseButton")
-const toggleSidebarDrop = document.querySelector("#dropable-sidebar-link");
 
-toggleSidebarDrop.addEventListener("click", () => {
-    toggleSidebarDrop.classList.toggle("show-dropmenu")
- })
+// const toggleSidebarDrop = document.querySelector("#dropable-sidebar-link");
+
+// toggleSidebarDrop.addEventListener("click", () => {
+//     sidebar.classList.toggle("show-dropmenu")
+//  })
 
 
 burger.addEventListener("click", function(){
