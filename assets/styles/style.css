@@ -2,8 +2,8 @@
 :root {
   --primary: #dd77c8;
   --background: #ffe7fc;
-  --header-font: "Ruda", sans-serif;
-  --body-font: "Montserrat", sans-serif;
+  --header-font: "Raleway", sans-serif;
+  --body-font: "Raleway", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -1334,3 +1334,5 @@ body {
 }
 
 /* !SECTION All events */
+
+
