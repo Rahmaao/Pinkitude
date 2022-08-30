@@ -270,7 +270,7 @@ body {
 }
 
 .pinkitude-navbar__buttons-container {
-  width: 23%;
+  width: 25%;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -378,7 +378,7 @@ body {
   }
 
   .pinkitude-navbar__buttons-container {
-    width: 24%;
+    width: 30%;
     justify-content: space-between;
   }
 }
@@ -467,14 +467,14 @@ body {
   justify-content: center;
   gap: 15px;
   position: relative;
-  top: 150px;
+  top: 70px;
 }
 
 .pinkitude-hero-card {
   background: var(--background);
   width: 200px;
   border-radius: 20px;
-  padding: 40px 20px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -484,7 +484,7 @@ body {
 .pinkitude-hero-card h4 {
   margin-bottom: 20px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: var(--header-font);
 }
 
@@ -562,7 +562,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .pinkitude-hero__black-filter {
-    padding: 120px 0;
+    padding: 70px 0;
   }
 }
 
@@ -581,12 +581,36 @@ body {
   .pinkitude-hero__text-container {
     padding-left: 5px;
     padding-right: 5px;
+    font-size: 25px;
   }
+
+  .pinkitude-hero__text-container p {
+    font-size: 15px;
+    margin-top: 9px;
+  }
+
   .pinkitude-hero__cards-container {
     flex-direction: column;
     align-items: center;
-    /* top: 0%;
-    margin-top: 80px; */
+  }
+
+  .pinkitude-hero-card {
+    /* height: unset; */
+    width: 250px;
+    padding: 15px 15px 25px 15px;
+  }
+
+  .pinkitude-hero-card h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: var(--header-font);
+  }
+
+  .pinkitude-hero-card p {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
   }
 
   .pinkitude-hero-card:not(:last-child) {
@@ -1601,3 +1625,50 @@ body {
 }
 
 /* !SECTION All events */
+
+
+  /* Event */
+  
+  .carousel-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  
+  }
+  
+  
+  .items{
+    width: 60%;
+    height: 5%;
+  }
+  
+  .section-title1 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    /* margin-bottom: 20px; */
+    position: relative;
+    color: #000000;
+  }
+  
+  
+  .event-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #18d26e; */
+    margin-bottom: 30px;
+  
+  }
+  
+  .date-title{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .event{
+    padding-top: 0px;
+    margin-top: 30px;
+  }
