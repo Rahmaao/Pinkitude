@@ -197,6 +197,7 @@ ul {
   cursor: pointer;
   padding: 1px;
   height: 100%;
+  width: fit-content;
   display: flex;
   align-items: center;
 }
@@ -1071,11 +1072,10 @@ ul {
 
 /* SECTION DONATE */
 
-.content h5{
+.content h5 {
   font-weight: 400;
   margin: 5px 0 20px 0;
   text-align: center;
-
 }
 
 .pinkitude-donate {
@@ -1113,7 +1113,6 @@ ul {
 }
 
 @media screen and (max-width: 414px) {
-
   .pinkitude-donate__account-details {
     width: 300px;
     height: 150px;
@@ -1124,11 +1123,10 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
     text-align: center;
   }
 }
-
 
 /* !SECTION DONATE */
 
@@ -1160,7 +1158,7 @@ ul {
 }
 
 .pinkitude-stories-page__story {
-  height: auto;
+  min-height: 271px;
   /* width: 300px; */
   display: flex;
   flex-direction: column;
