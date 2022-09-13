@@ -1808,6 +1808,10 @@ ul {
 .counts {
   padding: 50px 0 50px 0;
 }
+
+.award {
+  height: 130px;
+}
 @media screen and (max-width: 648px) {
   .carousel-container .content {
     padding: 0 20px;

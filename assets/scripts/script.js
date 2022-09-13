@@ -46,10 +46,10 @@ $('#carousel2prev').click(function () {
 $('#carousel2next').click(function () {
     $('.carousel2').carousel('next')
 })
-$('.carousel-control-prev').click(function () {
-    $('.carousel').carousel('prev')
-})
+// $('.carousel-control-prev').click(function () {
+//     $('.carousel').carousel('prev')
+// })
 
-$('.carousel-control-next').click(function () {
-    $('.carousel').carousel('next')
-})
+// $('.carousel-control-next').click(function () {
+//     $('.carousel').carousel('next')
+// })
