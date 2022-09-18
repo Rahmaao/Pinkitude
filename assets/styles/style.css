@@ -419,7 +419,7 @@ ul {
 .pinkitude-hero {
   width: 100%;
   height: 90vh;
-  background-image: url(/assets/img/girls.jpg);
+  background-image: url(/assets/img/hero.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
