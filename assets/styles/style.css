@@ -742,7 +742,7 @@ ul {
   background: var(--primary);
   height: 250px;
   width: 400px;
-  padding: 60px 50px;
+  padding: 40px 50px;
   position: relative;
   top: 10px;
   z-index: 5;
