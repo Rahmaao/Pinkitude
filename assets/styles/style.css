@@ -719,8 +719,6 @@ ul {
   width: 100%;
   height: 350px;
   display: flex;
-
-  /* padding: 0 200px; */
   justify-content: center;
 }
 
@@ -797,9 +795,20 @@ ul {
     position: unset;
     align-items: center;
   }
-  .pinkitude-stories .pinkitude-button {
-    bottom: 0px;
+  .pinkitude-stories__container .pinkitude-button {
     position: unset;
+    width: fit-content;
+  }
+
+  .pinkitude-stories__text-container {
+    z-index: 5;
+    position: relative;
+    top: -25px;
+  }
+
+  .pinkitude-stories__text-container a {
+    position: relative;
+    top: -5px;
   }
   .pinkitude-stories__text-container {
     left: 0px;
@@ -811,6 +820,7 @@ ul {
     position: unset;
     width: 300px;
     height: fit-content;
+    padding: 30px 40px;
   }
   .pinkitude-stories__img {
     background: gray;
@@ -917,9 +927,14 @@ ul {
   }
 
   .pinkitude-upcoming .carousel-item__upcoming-event__wrapper {
-    height: 500px;
+    height: auto;
     width: 100%;
     padding: 0 10px;
+  }
+
+  .pinkitude-upcoming .carousel-item {
+    height: auto;
+    width: 100%;
   }
 
   .pinkitude-upcoming .pinkitude-upcoming__event {
@@ -1116,6 +1131,7 @@ ul {
 
 .pinkitude-donate__account-details h2 {
   font-size: 40px;
+  color: black;
 }
 .pinkitude-donate__account-details h5 {
   font-weight: 400;
@@ -1123,6 +1139,9 @@ ul {
 }
 
 @media screen and (max-width: 414px) {
+  .pinkitude-donate {
+    padding-top: 150px;
+  }
   .pinkitude-donate__account-details {
     width: 300px;
     height: 150px;
@@ -1135,6 +1154,15 @@ ul {
     justify-content: center;
 
     text-align: center;
+  }
+
+  .pinkitude-donate p {
+    font-size: 14px;
+    padding: 0 3rem;
+  }
+
+  .pinkitude-donate__account-details h2 {
+    color: black;
   }
 }
 
@@ -1816,6 +1844,10 @@ ul {
 @media screen and (max-width: 648px) {
   .carousel-container .content {
     padding: 0 20px;
+  }
+
+  .award {
+    height: 20px;
   }
 }
 
