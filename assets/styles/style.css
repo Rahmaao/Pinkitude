@@ -15,6 +15,7 @@
 }
 a {
   text-decoration: none;
+  color: unset;
 }
 
 body {
@@ -357,6 +358,14 @@ ul {
   transition: 200ms ease-in-out;
 }
 
+a.pinkitude-navbar__sidebar__link {
+  color: var(--background);
+}
+
+a.pinkitude-navbar__sidebar__link:hover{
+  color: var(--background);
+}
+
 .pinkitude-navbar__sidebar__buttons-container button:first-child {
   margin-bottom: 10px;
 }
@@ -493,7 +502,7 @@ ul {
 .pinkitude-hero-card p {
   font-size: 12px;
   text-align: center;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -670,7 +679,7 @@ ul {
 .pinkitude-whatwedo__card__text p {
   font-weight: 200;
   font-size: 13px;
-  text-align: justify;
+  /* text-align: justify; */
   padding: 0 10px;
 }
 
@@ -1183,6 +1192,19 @@ ul {
   z-index: 3;
 }
 
+.pinkitude-stories-page2 {
+  width: 100%;
+  height: auto;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 3;
+}
+
 .pinkitude-stories-page__stories-container {
   width: 100%;
   height: auto;
@@ -1194,6 +1216,20 @@ ul {
   justify-content: space-around;
   align-items: center;
 }
+
+/* .pinkitude-stories-page__stories-container2 {
+  width: 100%;
+  height: auto;
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  justify-content: center;
+  align-items: center;
+} */
+
+
 
 .pinkitude-stories-page__story {
   min-height: 271px;
@@ -1209,6 +1245,7 @@ ul {
 
 .pinkitude-stories-page__story-text p {
   margin-bottom: 50px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1847,7 +1884,7 @@ ul {
   }
 
   .award {
-    height: 20px;
+    height: 200px;
   }
 }
 

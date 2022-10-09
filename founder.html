@@ -1,263 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link href="assets/styles/style2.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link href="assets/styles/style2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles/style.css" />
 
-    <title>Event | Pinkitude Place </title>
-  </head>
-  <body>
-    <div class="pinkitude-container">
-      <nav class="pinkitude-navbar">
-        <div class="pinkitude-navbar__burger" id="jsBurgerButton">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+  <title>Event | Pinkitude Place </title>
+</head>
+
+<body>
+  <div class="pinkitude-container">
+    <nav class="pinkitude-navbar">
+      <div class="pinkitude-navbar__burger" id="jsBurgerButton">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+
+      <ul class="pinkitude-navbar__links-container">
+        <li class="pinkitude-navbar__link">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="pinkitude-navbar__link">
+          <a href="about.html">About Us</a>
+        </li>
+        <li class="pinkitude-navbar__link">
+          <a href="http://">Works</a>
+          <ul class="pinkitude-navbar__link__drop">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="pinkitude-navbar__logo-container">
+        <img src="./assets/img/logo.png" alt="logo" />
+      </div>
+
+      <div class="pinkitude-navbar__buttons-container">
+        <a href="/donate.html">
+          <button class="pinkitude-button">Donate</button>
+        </a>
+
+        <a href="/contact.html">
+          <button class="pinkitude-button pinkitude-button_inverse">
+            Volunteer
+          </button></a>
+      </div>
+
+      <div class="pinkitude-navbar__sidebar" id="jsSidebar">
+        <div class="pinkitude-navbar__sidebar__close-button" id="jsCloseButton">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </div>
 
-        <ul class="pinkitude-navbar__links-container">
-          <li class="pinkitude-navbar__link">
-            <a href="/index.html">Home</a>
+        <ul class="pinkitude-navbar__sidebar__links-container">
+          <li>
+            <a href="/index.html" class="pinkitude-navbar__sidebar__link">Home</a>
           </li>
-          <li class="pinkitude-navbar__link">
-            <a href="about.html">About Us</a>
+
+          <li>
+            <a href="about.html" class="pinkitude-navbar__sidebar__link">About Us</a>
           </li>
-          <li class="pinkitude-navbar__link">
-            <a href="http://">Works</a>
-            <ul class="pinkitude-navbar__link__drop">
-              <li><a href="events.html">Events</a></li>
-              <li><a href="stories.html">Stories</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
+
+          <li id="dropable-sidebar-link" class="pinkitude-navbar__sidebar__link">
+            Work
+            <ul class="pinkitude-navbar__sidebar__link__dropmenu">
+              <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
+                <a href="events.html">Events</a>
+              </li>
+              <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
+                <a href="stories.html">Stories</a>
+              </li>
+              <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
+                <a href="gallery.html">Gallery</a>
+              </li>
             </ul>
           </li>
         </ul>
 
-        <div class="pinkitude-navbar__logo-container">
-          <img src="./assets/img/logo.png" alt="logo" />
-        </div>
-
-        <div class="pinkitude-navbar__buttons-container">
+        <div class="pinkitude-navbar__sidebar__buttons-container">
           <a href="/donate.html">
-            <button class="pinkitude-button">Donate</button>
+            <button class="pinkitude-button pinkitude-button_alt">
+              Donate
+            </button>
           </a>
 
           <a href="/contact.html">
             <button class="pinkitude-button pinkitude-button_inverse">
               Volunteer
-            </button></a
-          >
+            </button>
+          </a>
         </div>
+      </div>
+    </nav>
 
-        <div class="pinkitude-navbar__sidebar" id="jsSidebar">
-          <div
-            class="pinkitude-navbar__sidebar__close-button"
-            id="jsCloseButton"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
+    <div class="carousel-container">
 
-          <ul class="pinkitude-navbar__sidebar__links-container">
-            <li>
-              <a href="/index.html" class="pinkitude-navbar__sidebar__link"
-                >Home</a
-              >
-            </li>
+      <img src="assets/img/team/photo_2022-09-13_15-19-14.jpg" class="founder-img" alt="" />
 
-            <li>
-              <a href="about.html" class="pinkitude-navbar__sidebar__link"
-                >About Us</a
-              >
-            </li>
-
-            <li
-              id="dropable-sidebar-link"
-              class="pinkitude-navbar__sidebar__link"
-            >
-              Work
-              <ul class="pinkitude-navbar__sidebar__link__dropmenu">
-                <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
-                  <a href="events.html">Events</a>
-                </li>
-                <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
-                  <a href="stories.html">Stories</a>
-                </li>
-                <li class="pinkitude-navbar__sidebar__link__dropmenu__link">
-                  <a href="gallery.html">Gallery</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <div class="pinkitude-navbar__sidebar__buttons-container">
-            <a href="/donate.html">
-              <button class="pinkitude-button pinkitude-button_alt">
-                Donate
-              </button>
-            </a>
-
-            <a href="/contact.html">
-              <button class="pinkitude-button pinkitude-button_inverse">
-                Volunteer
-              </button>
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="carousel-container">
-        <!-- <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Events</li>
-            </ol>
-          </nav>
-        </div> -->
-        <!-- <div
-          id="carouselExampleIndicators"
-          class="carousel slide items"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </button>
-        </div> -->
-        
-          <img
-            src="assets/img/team/photo_2022-09-13_15-19-14.jpg"
-            class="founder-img"
-            alt=""
-          />
-        
-        <section id="event" class="event">
-          <div class="container">
-            <div class="section-title1">
-              <div class="event-title">
-                <h2>Emmanuel Oluwaseyi Odunusi</h2>
-                <div class="date-title">
-                  <!-- <i class='bx bx-time-five'></i> -->
-                  <h6>Founder, Pinkitude Place</h6>
-                </div>
+      <section id="event" class="event">
+        <div class="container">
+          <div class="section-title">
+            <div class="event-title">
+              <h2>Emmanuel Oluwaseyi Odunusi</h2>
+              <div class="date-title">
+                <h6>Founder, Pinkitude Place</h6>
               </div>
+            </div>
 
-              <div class="content">
-                <p>
-                  Odunusi Emmanuel Oluwaseyi is an enthusiast when it comes to working with young people. His desire to mould and develop young minds into formidable people led him to establishing Pinkitude Place in 2016. 
-The Pinkitude Place aims to equip and empower young people with necessary skills to become lights in the society. He has worked and trained over 5,000 young people on personal development through his modules on emotional intelligence, temperaments, identity crisis and hierarchy of needs and the likes. 
-Furthermore, he is a humanitarian and community development specialist who has worked  with NGOs, INGOs and various top-notched schools. 
-                  <br />
-                  <br>
-                  Sunshine, as he is fondly called, graduated with a B.sc in Economics in 2012 from Ajayi Crowther University. In 2017, he bagged the prestigious MBA degree from Obafemi Awolowo University (OAU). Currently, he is a graduate student of The American University of Nigeria where he is pursuing a masters degree in Business Administration. 
-                  Odunusi Emmanuel Oluwaseyifunmi is script writer, Art lover, educational consultant, prolific musician and a child of God.
-                </p>
-              </div>
-              <!-- <div class="btn1">
+            <div class="pinkitude-content">
+              <p>
+                Odunusi Emmanuel Oluwaseyi is an enthusiast when it comes to working with young people. His desire to
+                mould and develop young minds into formidable people led him to establishing Pinkitude Place in 2016.
+                The Pinkitude Place aims to equip and empower young people with necessary skills to become lights in the
+                society. He has worked and trained over 5,000 young people on personal development through his modules
+                on emotional intelligence, temperaments, identity crisis and hierarchy of needs and the likes.
+                Furthermore, he is a humanitarian and community development specialist who has worked with NGOs, INGOs
+                and various top-notched schools.
+                <br />
+                <br>
+                Sunshine, as he is fondly called, graduated with a B.sc in Economics in 2012 from Ajayi Crowther
+                University. In 2017, he bagged the prestigious MBA degree from Obafemi Awolowo University (OAU).
+                Currently, he is a graduate student of The American University of Nigeria where he is pursuing a masters
+                degree in Business Administration.
+                Odunusi Emmanuel Oluwaseyifunmi is script writer, Art lover, educational consultant, prolific musician
+                and a child of God.
+              </p>
+            </div>
+            <!-- <div class="btn1">
                 <a href="gallery.html"></a>
                   <button
                     class="pinkitude-button pinkitude-button_content-width"
@@ -266,51 +160,52 @@ Furthermore, he is a humanitarian and community development specialist who has w
                   </button>
                 </a>
               </div> -->
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <footer class="pinkitude-footer">
-        <div class="pinkitude-footer__logo">
-          <img src="./assets/img/logo.png" alt="logo" />
-        </div>
-        <div class="pinkitude-footer__links-container">
-          <div class="pinkitude-footer__links-container__group">
-            <div class="pinkitude-footer__links-container__group__header">
-              <h6>FIND US</h6>
-            </div>
-            <p>
-              Block 4 Flat 2 Maryland Housing Estate Maryland, Lagos State.
-              Nigeria
-            </p>
-          </div>
-          <div class="pinkitude-footer__links-container__group">
-            <div class="pinkitude-footer__links-container__group__header">
-              <h6>CONTACT US</h6>
-            </div>
-            <p>+2348120148016 +2348136597342 thepinkitudeplace@gmail.com</p>
-          </div>
-          <div class="pinkitude-footer__links-container__group">
-            <div class="pinkitude-footer__links-container__group__header">
-              <h6>INSTAGRAM</h6>
-            </div>
-            <p>@pinkitudeplace</p>
           </div>
         </div>
-        <div class="pinkitude-footer__buttons-container">
-          <a href="/donate.html">
-            <button class="pinkitude-button">Donate</button>
-          </a>
-          <a href="/contact.html">
-            <button class="pinkitude-button pinkitude-button_inverse">
-              Volunteer
-            </button>
-          </a>
-        </div>
-      </footer>
+      </section>
     </div>
 
-    <script src="./assets/scripts/script.js"></script>
-  </body>
+    <footer class="pinkitude-footer">
+      <div class="pinkitude-footer__logo">
+        <img src="./assets/img/logo.png" alt="logo" />
+      </div>
+      <div class="pinkitude-footer__links-container">
+        <div class="pinkitude-footer__links-container__group">
+          <div class="pinkitude-footer__links-container__group__header">
+            <h6>FIND US</h6>
+          </div>
+          <p>
+            Block 4 Flat 2 Maryland Housing Estate Maryland, Lagos State.
+            Nigeria
+          </p>
+        </div>
+        <div class="pinkitude-footer__links-container__group">
+          <div class="pinkitude-footer__links-container__group__header">
+            <h6>CONTACT US</h6>
+          </div>
+          <p>+2348120148016 +2348136597342 thepinkitudeplace@gmail.com</p>
+        </div>
+        <div class="pinkitude-footer__links-container__group">
+          <div class="pinkitude-footer__links-container__group__header">
+            <h6>INSTAGRAM</h6>
+          </div>
+          <p>@pinkitudeplace</p>
+        </div>
+      </div>
+      <div class="pinkitude-footer__buttons-container">
+        <a href="/donate.html">
+          <button class="pinkitude-button">Donate</button>
+        </a>
+        <a href="/contact.html">
+          <button class="pinkitude-button pinkitude-button_inverse">
+            Volunteer
+          </button>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
 </html>
