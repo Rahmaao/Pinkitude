@@ -569,7 +569,7 @@ a.pinkitude-navbar__sidebar__link:hover{
   .pinkitude-hero-card p {
     font-size: 14px;
     text-align: center;
-    font-weight: 200;
+    font-weight: 500;
   }
 }
 
@@ -622,7 +622,7 @@ a.pinkitude-navbar__sidebar__link:hover{
   .pinkitude-hero-card p {
     font-size: 12px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
   }
 
   .pinkitude-hero-card:not(:last-child) {
